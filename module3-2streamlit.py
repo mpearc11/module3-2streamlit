@@ -1,3 +1,4 @@
+import biopython
 from Bio.Seq import Seq
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
 import streamlit as st
