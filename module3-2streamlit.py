@@ -7,7 +7,7 @@ st.title('Module 3-2')
 dna_seq = st.text_input('paste your dna sequence')
 dna_seq = Seq(dna_seq)
 
-if st.button('translate dna sequence')
+if st.button('translate dna sequence'):
     translation = dna_seq.translate()
     st.write('protein sequence: ' + str(translation))
 
