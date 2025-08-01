@@ -19,7 +19,7 @@ if st.button('analyze unprocessed sequence'):
     st.write('number of amino acids = ' + str(len(unprocessed_seq)))
     st.write('molecular weight = ' + str(unprocessed_param.molecular_weight()) + ' daltons')
     st.write('pI = ' + str(unprocessed_param.isoelectric_point()))
-    st.markdown('extinction coefficient = ' + str(unprocessed_param.molar_extinction_coefficient()[1]) + ' M<sup>-1</sup> cm<sup>-1</sup>')
+    st.write('extinction coefficient = ' + str(unprocessed_param.molar_extinction_coefficient()[1]) + ' M⁻¹cm⁻¹')
 
 processed_seq = st.text_input('paste your processed protein sequence')
 
@@ -29,7 +29,7 @@ if st.button('analyze processed sequence'):
     st.write('number of amino acids = ' + str(len(processed_seq)))
     st.write('molecular weight = ' + str(processed_param.molecular_weight()) + ' daltons')
     st.write('pI = ' + str(processed_param.isoelectric_point()))
-    st.write('extinction coefficient = ' + str(processed_param.molar_extinction_coefficient()[1]) + ' M<sup>-1</sup> cm<sup>-1</sup>')
+    st.write('extinction coefficient = ' + str(processed_param.molar_extinction_coefficient()[1]) + ' M⁻¹cm⁻¹')
 
 #tag_seq = Seq("MGSSHHHHHHSSGDYKDDDKLEVLFQGP")
 #unprocessed_seq = tag_seq + prot_seq[1:]
