@@ -11,7 +11,7 @@ if st.button('translate dna sequence'):
     translation = dna_seq.translate()
     st.write('protein sequence: ' + str(translation))
 
-    unprocessed_seq = st.text_input('paste your unprocessed protein sequence')
+unprocessed_seq = st.text_input('paste your unprocessed protein sequence')
 
 if st.button('analyze unprocessed sequence'):
     unprocessed_param = ProteinAnalysis(unprocessed_seq)
@@ -21,7 +21,7 @@ if st.button('analyze unprocessed sequence'):
     st.write('pI = ' + str(unprocessed_param.isoelectric_point()))
     st.write('extinction coefficient = ' + str(unprocessed_param.molar_extinction_coefficient()[1]) + ' M<sup>-1</sup> cm<sup>-1</sup>')
 
-    processed_seq = st.text_input('paste your processed protein sequence')
+processed_seq = st.text_input('paste your processed protein sequence')
 
 if st.button('analyze processed sequence'):
     processed_param = ProteinAnalysis(processed_seq)
